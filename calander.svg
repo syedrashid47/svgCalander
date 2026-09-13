@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
+	<rect x="1" y="1" width="98" height="98" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+	<rect x="1" y="1" width="98" height="27" rx="10" fill="#198754"/>
+	<rect x="1" y="18" width="98" height="10" fill="#198754"/>
+	<text id="month" x="50" y="20" text-anchor="middle" font-family="Arial" font-size="18" fill="#fff">OCT</text>
+	<text id="day" x="50" y="70" text-anchor="middle" font-family="Arial" font-size="42" font-weight="bold" fill="#333">25</text>
+	<text id="year" x="50" y="95" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#666">1985</text>
+	<script>const d=new Date();document.getElementById("day").textContent=d.getDate();document.getElementById("month").textContent=d.toLocaleString("en-US",{month:"short"}).toUpperCase();document.getElementById("year").textContent=d.getFullYear();</script>
+</svg>
